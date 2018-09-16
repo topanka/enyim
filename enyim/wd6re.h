@@ -1,6 +1,8 @@
 #ifndef __WD6RE_H_INCLUDED__
 #define __WD6RE_H_INCLUDED__
 
+#include "Arduino.h"
+
 #define WD6RE_TBI_NUM       3
 
 typedef struct tagWD6RE {
@@ -25,5 +27,6 @@ void wd6re_isrB2(void);
 void wd6re_isrB2(void);
 void wd6re_isrB3(void);
 
+uint16_t qe_rpm_tbi(WD6RE *wd6re);
 
 #endif /* __WD6RE_H_INCLUDED__ */

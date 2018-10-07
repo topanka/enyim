@@ -62,11 +62,14 @@ const uint8_t PROGMEM ump_digital_pin_to_bit_mask_PGM[] = {
 
 void ump_pinMode(uint8_t pin, uint8_t mode)
 {
-  uint8_t bit = ump_digitalPinToBitMask(pin);
-  uint8_t port = ump_digitalPinToPort(pin);
+  uint8_t bit;
+  uint8_t port;
   volatile uint8_t *reg, *out;
 
-  if (port == NOT_A_PIN) return;
+  if (pin >= UMP_NUM_DIGITAL_PINS) return;
+
+  bit = ump_digitalPinToBitMask(pin);
+  port = ump_digitalPinToPort(pin);
 
   // JWS: can I let the optimizer do this?
   reg = portModeRegister(port);
@@ -94,12 +97,14 @@ void ump_pinMode(uint8_t pin, uint8_t mode)
 
 void ump_digitalWrite(uint8_t pin, uint8_t val)
 {
-  uint8_t bit = ump_digitalPinToBitMask(pin);
-  uint8_t port = ump_digitalPinToPort(pin);
+  uint8_t bit;
+  uint8_t port;
   volatile uint8_t *out;
 
-  if (port == NOT_A_PIN) return;
+  if (pin == UMP_NUM_DIGITAL_PINS) return;
 
+  bit = ump_digitalPinToBitMask(pin);
+  port = ump_digitalPinToPort(pin);
   out = portOutputRegister(port);
 
   uint8_t oldSREG = SREG;

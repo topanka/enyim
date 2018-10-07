@@ -2,7 +2,7 @@
 #define __RA1ST_H_INCLUDED__
 
 #define UCCB_CBOX_LEAD          0x96
-#define UCCB_RA1_LEAD          0x38
+#define UCCB_RA1_LEAD           0x38
 
 #define UCCB_PST_INIT           1
 #define UCCB_PST_TYPE           2

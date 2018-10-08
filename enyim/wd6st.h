@@ -1,5 +1,5 @@
-#ifndef __UCCBST_H_INCLUDED__
-#define __UCCBST_H_INCLUDED__
+#ifndef __WD6ST_H_INCLUDED__
+#define __WD6ST_H_INCLUDED__
 
 #define UCCB_MD_MAXSPEED	400
 #define UCCB_RDD_MAXPOS		200
@@ -33,4 +33,4 @@
 #define UCCB_WD6CU_PKTLEN       20
 #define UCCB_WD6CU_PKTLAST      (UCCB_WD6CU_PKTLEN-2)
 
-#endif /* __UCCBST_H_INCLUDED__ */
+#endif /* __WD6ST_H_INCLUDED__ */

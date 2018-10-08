@@ -23,7 +23,7 @@ typedef struct tagWD6RE {
 void wd6re_isrJ1(void);
 void wd6re_isrJ2(void);
 void wd6re_isrJ3(void);
-void wd6re_isrB2(void);
+void wd6re_isrB1(void);
 void wd6re_isrB2(void);
 void wd6re_isrB3(void);
 

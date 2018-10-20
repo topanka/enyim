@@ -8,8 +8,8 @@
 typedef struct tagWD6RE {
   volatile uint8_t ic;     // interrupt counter
   uint8_t ico;
-  volatile unsigned long g_wd6re_tbi;  //time between interrupts
-  uint8_t g_wd6re_num_tbi;
+  volatile unsigned long tbi;  //time between interrupts
+  uint8_t num_tbi;
   uint8_t l_idx;
   uint8_t l_r0;
   uint16_t l_rpm;

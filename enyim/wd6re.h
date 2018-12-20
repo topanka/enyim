@@ -11,7 +11,6 @@ typedef struct tagWD6RE {
   volatile unsigned long tbi;  //time between interrupts
   uint8_t num_tbi;
   uint8_t l_idx;
-  uint8_t l_r0;
   uint16_t l_rpm;
   unsigned long l_tbi[WD6RE_TBI_NUM];
   unsigned long l_sum;

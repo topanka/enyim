@@ -9,7 +9,7 @@
 #define WD6CUMC_PST_CRC           3
 #define WD6CUMC_PST_READY        66
 
-#define WD6CUMC_CU_PKTLEN      28
+#define WD6CUMC_CU_PKTLEN      34
 #define WD6CUMC_CU_PKTLAST     (WD6CUMC_CU_PKTLEN-2)
 
 #define WD6CUMC_MC_PKTLEN      18

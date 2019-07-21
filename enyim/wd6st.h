@@ -30,7 +30,7 @@
 #define UCCB_WD6BX_PKTLEN       39
 #define UCCB_WD6BX_PKTLAST      (UCCB_WD6BX_PKTLEN-2)
 
-#define UCCB_WD6CU_PKTLEN       22
+#define UCCB_WD6CU_PKTLEN       24
 #define UCCB_WD6CU_PKTLAST      (UCCB_WD6CU_PKTLEN-2)
 
 #endif /* __WD6ST_H_INCLUDED__ */

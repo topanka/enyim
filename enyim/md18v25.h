@@ -11,11 +11,14 @@ struct MD18V25 {
   unsigned char acs709_viout_pin;
   unsigned char acs709_vzcr_pin;
   unsigned int acs709_vzcr;
+  int acs709_vzcr_offset;
   unsigned char ff1_pin;
   unsigned char ff2_pin;
   unsigned char reset_pin;
   char dir;
   RunningAverage *mcra;
+  int curr_cutoff_reached;
+  int overloaded;
 };
 
 #endif /* _MD18V25_H_INCLUDED__ */

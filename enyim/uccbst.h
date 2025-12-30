@@ -7,6 +7,7 @@
 #define UCCB_ST_M1		0x8000    /* 1000 0000 0000 0000 */
 #define UCCB_ST_M2		0x4000    /* 0100 0000 0000 0000 */
 #define UCCB_ST_POSLIGHT	0x3000    /* 0011 0000 0000 0000 */
+#define UCCB_ST_MD_RESET	0x0800    /* 0000 1000 0000 0000 */
 #define UCCB_ST_SW10P		0x000F    /* 0000 0000 0000 XXXX */
 
 #define UCCB_PL_OFF		0
@@ -30,7 +31,7 @@
 #define UCCB_CBOX_PKTLEN        39
 #define UCCB_CBOX_PKTLAST       (UCCB_CBOX_PKTLEN-2)
 
-#define UCCB_SHIP_PKTLEN        20
+#define UCCB_SHIP_PKTLEN        21
 #define UCCB_SHIP_PKTLAST       (UCCB_SHIP_PKTLEN-2)
 
 #endif /* __UCCBST_H_INCLUDED__ */
